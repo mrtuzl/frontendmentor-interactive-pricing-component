@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(230, 100%, 99%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  font-family: "Manrope", sans-serif;
+  /* Rounded sliders */
+}
+.container .title {
+  height: 200px;
+  padding: 45px;
+  margin: 30px;
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .title h1 {
+  color: hsl(227, 35%, 25%);
+}
+.container .title .trial {
+  margin-top: 10px;
+  color: hsl(225, 20%, 60%);
+}
+.container .box {
+  width: 600px;
+  height: 450px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 32px 8px rgba(214, 214, 214, 0.34);
+}
+.container .box .info {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.container .box .info .view {
+  font-weight: 800;
+  color: hsl(225, 20%, 60%);
+  font-size: 1rem;
+}
+.container .box .info .price {
+  display: flex;
+  align-items: center;
+}
+.container .box .info .price .dollar {
+  color: hsl(227, 35%, 25%);
+  font-size: 3rem;
+  font-weight: 900;
+  margin-right: 5px;
+}
+.container .box .info .price .billing {
+  color: hsl(225, 20%, 60%);
+}
+.container .box .inpt {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.container .box .inpt .input {
+  width: 500px;
+  height: 15px;
+  -webkit-appearance: none;
+  background: hsl(224, 65%, 95%);
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.container .box .inpt .input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%);
+  cursor: pointer;
+  box-shadow: -407px 0 0 400px hsl(174, 77%, 80%);
+}
+.container .box .discount {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 120px 40px 120px;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: hsl(225, 20%, 60%);
+  border-bottom: 1px solid hsl(224, 65%, 95%);
+}
+.container .box .discount .dis {
+  color: hsl(15, 100%, 70%);
+  font-size: 0.7rem;
+  background-color: hsl(14, 92%, 95%);
+  border-radius: 10px;
+  padding: 2px;
+}
+.container .box .advantages {
+  padding: 30px 50px 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: hsl(225, 20%, 60%);
+}
+.container .box .advantages .adv {
+  margin: 5px;
+}
+.container .box .advantages span {
+  margin-left: 15px;
+}
+.container .box .advantages .btn {
+  width: 180px;
+  height: 40px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(223, 50%, 87%);
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+}
+.container .box .advantages .btn:hover {
+  color: white;
+}
+.container .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+}
+.container .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.container .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(223, 50%, 87%);
+  transition: 0.4s;
+}
+.container .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+.container input:checked + .slider {
+  background-color: hsl(174, 77%, 80%);
+}
+.container input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.container .slider.round {
+  border-radius: 34px;
+}
+.container .slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .container .title h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .container .title .trial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .box {
+    width: 375px !important;
+    height: 600px !important;
+  }
+  .container .box .info {
+    width: 375px !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+  .container .box .info .price {
+    margin: 20px;
+  }
+  .container .box .inpt .input {
+    width: 300px !important;
+  }
+  .container .box .discount {
+    padding: 30px 50px 30px 50px;
+  }
+  .container .box .discount .hide {
+    display: none;
+  }
+  .container .box .advantages {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .container .box .advantages .leftside {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=App.css.map */
