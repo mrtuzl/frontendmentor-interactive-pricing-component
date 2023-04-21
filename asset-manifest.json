@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/frontendmentor-interactive-pricing-component/static/css/main.a7ccc317.css",
+    "main.js": "/frontendmentor-interactive-pricing-component/static/js/main.7d985c42.js",
+    "static/js/787.0bbe0b8a.chunk.js": "/frontendmentor-interactive-pricing-component/static/js/787.0bbe0b8a.chunk.js",
+    "index.html": "/frontendmentor-interactive-pricing-component/index.html",
+    "static/media/pattern-circles.svg": "/frontendmentor-interactive-pricing-component/static/media/pattern-circles.9f6ed14bb3b0084b05a9.svg",
+    "static/media/bg-pattern.svg": "/frontendmentor-interactive-pricing-component/static/media/bg-pattern.76d3fa7ddce078ad96b5.svg",
+    "static/media/icon-check.svg": "/frontendmentor-interactive-pricing-component/static/media/icon-check.83c38a48815855ecc2d7e233514a2a7d.svg",
+    "main.a7ccc317.css.map": "/frontendmentor-interactive-pricing-component/static/css/main.a7ccc317.css.map",
+    "main.7d985c42.js.map": "/frontendmentor-interactive-pricing-component/static/js/main.7d985c42.js.map",
+    "787.0bbe0b8a.chunk.js.map": "/frontendmentor-interactive-pricing-component/static/js/787.0bbe0b8a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7ccc317.css",
+    "static/js/main.7d985c42.js"
+  ]
+}
